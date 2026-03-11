@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Anil Chetri, Software Engineer and Python Developer">
+    <meta name="keywords" content="Anil Chetri, Software Engineer, Python Developer, Portfolio">
+
+    <title>Anil Chetri | Software Engineer Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">AC Portfolio</div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-box">Home</a></li>
+            <li><a href="#about" class="nav-box">About</a></li>
+            <li><a href="#skills" class="nav-box">Skills</a></li>
+            <li><a href="#projects" class="nav-box">Projects</a></li>
+            <li><a href="#education" class="nav-box">Education</a></li>
+            <li><a href="#certifications" class="nav-box">Certifications</a></li>
+            <li><a href="#resume" class="nav-box">Resume</a></li>
+            <li><a href="#contact" class="nav-box">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <h1>Anil Chetri</h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p class="hero-desc">
+            Aspiring Software Engineer and BCA student passionate about building scalable web applications and solving real-world problems with clean and efficient code.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="anilchetri_resume.pdf" download class="btn">Download Resume</a>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+
+        <div class="hero-social">
+
+            <a href="https://github.com/Anilchetri01" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anil-chetri-2171833a3/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:anilchetri810@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </section>
+    <section id="about" class="section">
+
+        <h2 class="about-title">About Me</h2>
+
+        <div class="about-layout">
+
+            <img src="anilchetri1.png" class="about-side left-photo" alt="Anil Chetri">
+
+            <div class="about-text">
+
+                <p>
+                    I am a Bachelor of Computer Applications (BCA) student with strong interest in software engineering, Python programming, and modern web development.
+                </p>
+
+                <p>
+                    I enjoy solving complex technical problems and building clean, scalable, and user-friendly applications using modern technologies.
+                </p>
+
+                <p>
+                    My work focuses on combining logical problem solving with modern UI/UX design to create efficient and practical digital solutions.
+                </p>
+
+                <p>
+                    Currently I am expanding my skills in backend development, databases, and real-world software engineering practices.
+                </p>
+
+            </div>
+
+            <img src="anilchetri2.png" class="about-side right-photo" alt="Anil Chetri">
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span class="skill-icon">🐍</span>
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress python"></div>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span class="skill-icon">🌐</span>
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress html"></div>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span class="skill-icon">⚡</span>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress javascript"></div>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span class="skill-icon">🗄</span>
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-percent">70%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress sql"></div>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span class="skill-icon">🎨</span>
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress css"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-buttons">
+
+            <button class="skill-btn" onclick="showSkill('programming')">Programming</button>
+            <button class="skill-btn" onclick="showSkill('web')">Web Development</button>
+            <button class="skill-btn" onclick="showSkill('database')">Database</button>
+            <button class="skill-btn" onclick="showSkill('tools')">Tools</button>
+
+        </div>
+
+        <div id="skill-display" class="skill-display"></div>
+
+    </section>
+    <section id="highlights" class="section">
+
+        <h2>Highlights</h2>
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <h3>3+</h3>
+                <p>Projects Built</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>6+</h3>
+                <p>Technologies Learned</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>100+</h3>
+                <p>Hours of Coding Practice</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LEARNING -->
+    <section id="learning" class="section">
+
+        <h2>Currently Learning</h2>
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <h3>Python Backend Development</h3>
+                <p>Improving backend development skills using Python and building scalable web applications.</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Advanced SQL</h3>
+                <p>Learning database optimization, joins, indexing and real-world data handling.</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Data Structures & Algorithms</h3>
+                <p>Practicing problem solving and algorithm design for technical interviews.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Mobile App Development</h3>
+                <p>Exploring cross-platform mobile development and building responsive applications for Android and iOS.</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Artificial Intelligence & Machine Learning</h3>
+                <p>Learning machine learning fundamentals, data analysis, and building intelligent systems using Python.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Cloud Computing</h3>
+                <p>Learning cloud fundamentals and exploring platforms like AWS for deploying scalable applications.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <h3>AI Diet and Lifestyle Recommendation </h3>
+
+                <p>
+                    An intelligent system that analyzes user health data and lifestyle habits to generate personalized diet and fitness recommendations.
+                </p>
+
+                <div class="tech-stack">
+                    <span>PYTHON</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Anilchetri01/AWS-mastery-hub" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Cafe Restaurant Food Ordering System</h3>
+
+                <p>
+                    Web-based food ordering system that allows users to browse menu items, select quantities, and generate total bills dynamically.
+                </p>
+
+                <div class="tech-stack">
+                    <span>PYTHON</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Anilchetri01/Cafe-Restaurant-Food-Ordering-System" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Dynamic Calculator</h3>
+
+                <p>
+                    Interactive calculator with modern UI, real-time calculations, and calculation history functionality.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Anilchetri01/Codsoft_task3" target="_blank">GitHub</a>
+                    <a href="https://anilchetri01.github.io/Codsoft_task3/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+
+        <h2>Education</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>SB College of Management Studies</p>
+                <p>Bengaluru, Karnataka</p>
+                <p>2023 – 2026</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Class XII</h3>
+                <p>ST Vincent HS School</p>
+                <p>Darjeeling, West Bengal</p>
+                <p>2023</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Class X</h3>
+                <p>ST Vincent HS School</p>
+                <p>Darjeeling, West Bengal</p>
+                <p>2021</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+
+        <h2>Certifications</h2>
+
+        <div class="cert-grid">
+
+            <div class="cert-card">
+                <h3>Adobe Design Fundamentals with AI</h3>
+                <p>Coursera</p>
+                <button onclick="openCert('adobe-ai.png')" class="cert-btn">
+View Certificate
+</button>
+            </div>
+
+            <div class="cert-card">
+                <h3>Getting Started with Full Stack Java Development</h3>
+                <p>Simplilearn</p>
+                <button onclick="openCert('java-fullstack.png')" class="cert-btn">
+View Certificate
+</button>
+            </div>
+
+            <div class="cert-card">
+                <h3>Full Stack Development 101</h3>
+                <p>Simplilearn</p>
+                <button onclick="openCert('fullstack101.png')" class="cert-btn">
+View Certificate
+</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+
+        <h2>Resume</h2>
+        <p>You can preview or download my resume.</p>
+
+        <div class="resume-card">
+
+            <a href="anilchetri_resume.pdf" target="_blank">
+                <img src="resume-preview.png" alt="Resume Preview">
+            </a>
+
+            <div class="resume-buttons">
+                <a href="anilchetri_resume.pdf" target="_blank" class="btn outline">View Resume</a>
+                <a href="anilchetri_resume.pdf" download class="btn outline">Download</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="contact-card">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+
+        <h3>Let's Work Together</h3>
+
+        <p>
+            If you have a project idea, internship opportunity,
+            or collaboration, feel free to reach out.
+        </p>
+
+        <p class="contact-info"><strong>Email:</strong> anilchetri810@gmail.com</p>
+        <p class="contact-info"><strong>Location:</strong> Bangalore, India</p>
+
+        <div class="contact-icons">
+
+            <a href="https://github.com/Anilchetri01" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anil-chetri-2171833a3/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="contact-right">
+
+        <form id="contact-form">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="send-btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <div id="form-success" class="form-success">
+           ✅ Message Sent Successfully! <br> Thank you for contacting me.
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+    <footer>
+        <p>© 2026 Anil Chetri | Software Engineer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("oPEZ5nLEXASYPTHm7");
+        })();
+    </script>
+    <script src="script.js"></script>
+
+
+    <div id="cert-popup" class="cert-popup">
+        <span class="close-cert" onclick="closeCert()">&times;</span>
+        <img id="cert-image" src="" alt="Certificate">
+    </div>
+
+
+<!-- SUCCESS POPUP -->
+<div id="success-popup" class="success-popup">
+
+  <div class="success-box">
+
+      <div class="success-icon">
+          <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h3>Message Sent!</h3>
+
+      <p>
+          Thank you for reaching out. I will
+          get back to you soon.
+      </p>
+
+      <button onclick="closePopup()">OK</button>
+
+  </div>
+
+</div>
+</body>
+
+</html>
+
+</html>
